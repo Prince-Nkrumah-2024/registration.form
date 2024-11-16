@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--<link rel="stylesheet" href="form.css">-->
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.form {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    width: 480px;
+    background-color: #ececec; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: inset 10px 10px 15px #c7c4c4, -10px -10px 15px #FFF;
+}
+
+.form h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.form p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.form label {
+    display: block; 
+    font-size: 16px;
+    margin-bottom: 5px; 
+}
+
+.form input {
+    font-size: 16px;
+    padding: 15px 10px;
+    width: calc(100% - 20px); 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    margin-bottom: 10px; 
+}
+
+.form button {
+    background-color: #4b7da7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px auto; 
+}
+
+.form button:hover {
+    background-color: #0068cf;
+}
+.course-align table{
+    width: 100%;
+}
+.course-align th{
+    font-size: 22px;
+}
+.course-align td{
+    text-align: center;
+}
+.course-align input{
+    font-size: 15px;
+    padding: 5px 5px;
+    width: calc(76% - 5px); 
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    text-align: left;
+}
+</style>
+<body>
+    <div class="form">
+            <h1>REGISTRATION FORM</h1>
+            <p>Please fill out the form below to register.</p><br>
+                <form action="#" method="post">
+                    <p>First Name:</p>
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                    <br>
+                    <p>Last Name:</p>
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                    <br>
+                    <p>Select Gender:</p>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <p>Phone Number:</p>
+                    <input type="tel" name="phonenember" placeholder="Phone Name" required>
+                    <br>
+                    <p>Email:</p>
+                    <input type="text" name="email" placeholder="Email">
+                    <br>
+                <br>
+                <div class="course-align">
+                <table > 
+                    <tr>
+                        <th>Select</th>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Fee</th>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="radio" name="course" value="Beginner" required></td>
+                        <div class="course-align"><td>Beginner</td></div>
+                        <td>2 Years</td>
+                        <td style="text-align: right;">GHS 3500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="course" value="Attachment" required></td>
+                        <div class="course-align"><td>Attachment</td></div>
+                        <td>6 Mounth</td>
+                        <td style="text-align: right;">GHS 3000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="course" value="Short Course" required></td>
+                        <td><input type="text" name="specific-area" placeholder="Enter the Specific Area you want" required></td>
+                        <td>3 Mounth</td>
+                        <td style="text-align: right;">GHS 2500.00</td>  
+                    </tr>
+                </table>
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+</body>
+</html>
